@@ -1,0 +1,16 @@
+---
+layout: page
+permalink: /traducoes/arcade/jamma-pcb/
+title: "JAMMA-PCB"
+---
+
+<ul id="{{ page.url | slugify }}" class="list-group">
+  {% assign traducoes = site.traducoes | where:"system","JAMMA PCB" %}
+  {% for traducao in traducoes %}
+    <li id="{{ traducao.url | slugify }}" class="list-group-item">
+      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
+        {{ traducao.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -19,4 +19,4 @@ platform: "Portátil"
 system: "Game Boy Advance"
 ---
 
-Tradução boa, com fonte acentuada, todos os diálogos e menu traduzidos, apenas alguns poucos erros de português e expressões que provavelmente foram deixadas propositalmente, como o "See ya" do cidadão no final da primeira fase.ATENÇÃO:Esta tradução deve ser aplicada na ROM original "Gekido Advance - Kintaro's Revenge (U).gba" (código AGEE), com CRC32 6BBC5F4D.�o deve ser aplicada na ROM original "Gekido Advance - Kintaro's Revenge (U).gba" (código AGEE), com CRC32 6BBC5F4D.
+Tradução boa, com fonte acentuada, todos os diálogos e menu traduzidos, apenas alguns poucos erros de português e expressões que provavelmente foram deixadas propositalmente, como o "See ya" do cidadão no final da primeira fase.ATENÇÃO:Esta tradução deve ser aplicada na ROM original "Gekido Advance - Kintaro's Revenge (U).gba" (código AGEE), com CRC32 6BBC5F4D deve ser aplicada na ROM original "Gekido Advance - Kintaro's Revenge (U).gba" (código AGEE), com CRC32 6BBC5F4D.
