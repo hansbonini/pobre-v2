@@ -16,6 +16,8 @@ collections:
 
 # Configurações de Build
 markdown: kramdown
+sass:
+  style: :compressed
 plugins:
   - jekyll-feed
 
