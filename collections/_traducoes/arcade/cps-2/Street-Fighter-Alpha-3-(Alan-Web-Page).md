@@ -2,7 +2,7 @@
 id: "8"
 patch_name: "Street Fighter Alpha 3 (Alan Web Page)"
 title: "Street Fighter Alpha 3"
-featured: "http://www.romhackers.org/imagens/traducoes/[CPS-2] Street Fighter Alpha 3 - NGBRT - Logo.png"
+featured: "http://www.romhackers.org/imagens/traducoes/[CPS2] Street Fighter Alpha 3 - NGBRT - Logo.png"
 type: ["Luta"]
 players: 2
 developer: "Capcom"

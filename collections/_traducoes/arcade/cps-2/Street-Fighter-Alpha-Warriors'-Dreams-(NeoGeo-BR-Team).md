@@ -2,7 +2,7 @@
 id: "1181"
 patch_name: "Street Fighter Alpha - Warriors' Dreams (NeoGeo BR Team)"
 title: "Street Fighter Alpha - Warriors' Dreams"
-featured: "http://www.romhackers.org/imagens/traducoes/[CPS-2] Street Fighter Alpha - NeoGeo BR Team - 1.png"
+featured: "http://www.romhackers.org/imagens/traducoes/[CPS2] Street Fighter Alpha - NeoGeo BR Team - 1.png"
 type: ["Luta"]
 players: 2
 developer: "Capcom"

@@ -2,7 +2,7 @@
 id: "7"
 patch_name: "Street Fighter Zero 2 Alpha (NeoGeo BR Team)"
 title: "Street Fighter Zero 2 Alpha"
-featured: "http://www.romhackers.org/imagens/traducoes/[CPS-2] Street Fighter Zero 2 Alpha - NGBRT - Logo.png"
+featured: "http://www.romhackers.org/imagens/traducoes/[CPS2] Street Fighter Zero 2 Alpha - NGBRT - Logo.png"
 type: ["Luta"]
 players: 2
 developer: "Capcom"
