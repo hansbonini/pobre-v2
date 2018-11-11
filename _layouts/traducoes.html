@@ -27,7 +27,13 @@ layout: page
           </tr>
           <tr>
             <th scope="row">Tipo</th>
-            <td>{{ page.type }}</td>
+            <td>
+              <ul class="list-group">
+              {% for item in page.type %}
+                <li class="list-group-item">{{ item }}</li>
+              {% endfor %}
+              </ul>
+            </td>
           </tr>
           <tr>
             <th scope="row">Jogadores</th>
@@ -44,6 +50,16 @@ layout: page
           <tr>
             <th scope="row">Data de Lançamento</th>
             <td>{{ page.release_date }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Tradutor(es)</th>
+            <td>
+              <ul class="list-group">
+              {% for item in page.author %}
+                <li class="list-group-item">{{ item }}</li>
+              {% endfor %}
+              </ul>
+            </td>
           </tr>
           <tr>
             <th scope="row">Grupo Tradutor</th>
