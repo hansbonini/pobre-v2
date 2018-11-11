@@ -1,0 +1,16 @@
+---
+layout: page
+permalink: /traducoes/console/dream-cast/
+title: "Dream cast"
+---
+
+<ul id="{{ page.url | slugify }}" class="list-group">
+  {% assign traducoes = site.traducoes | where:"system","Dream Cast" %}
+  {% for traducao in traducoes %}
+    <li id="{{ traducao.url | slugify }}" class="list-group-item">
+      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
+        {{ traducao.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

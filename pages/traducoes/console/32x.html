@@ -1,0 +1,16 @@
+---
+layout: page
+permalink: /traducoes/console/32x/
+title: "32X"
+---
+
+<ul id="{{ page.url | slugify }}" class="list-group">
+  {% assign traducoes = site.traducoes | where:"system","32X" %}
+  {% for traducao in traducoes %}
+    <li id="{{ traducao.url | slugify }}" class="list-group-item">
+      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
+        {{ traducao.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
