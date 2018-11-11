@@ -20,7 +20,7 @@ layout: compress
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous" />
     <link rel="stylesheet"
-      href="{{ '/assets/css/main.css' | relative_url }}" />
+      href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" />
 
     <!-- Fontes -->
     <link
@@ -54,7 +54,7 @@ layout: compress
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Logomarca -->
       <a class="navbar-brand" href="#">
-        <img src="{{ '/assets/svg/logo.svg' | relative_url }}" width="84" height="50" class="d-inline-block align-top" alt="">
+        <img src="{{ '/assets/svg/logo.svg' | prepend: site.baseurl }}" width="84" height="50" class="d-inline-block align-top" alt="">
       </a>
 
       <!-- Botão Mobile - Exibir Menu -->
@@ -123,7 +123,7 @@ layout: compress
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script
-      src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript">
+      src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" type="text/javascript">
     </script>
 
     <!-- Analytics -->
