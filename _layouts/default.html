@@ -1,0 +1,142 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="pt-br" itemscope itemtype="http://schema.org/Webpage">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <head>
+
+    <!-- SEO -->
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="{{ '/assets/css/main.css' | relative_url }}" />
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+    <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'
+      rel='stylesheet' />
+
+  </head>
+
+
+
+  <body>
+    <!-- Suporte de Browser -->
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Scroll Top -->
+    <div class="scroll-top">
+      <a href="#">
+        <i class="fas fa-angle-up"></i>
+      </a>
+    </div>
+
+    <!-- Menu Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Logomarca -->
+      <a class="navbar-brand" href="#">
+        <img src="{{ '/assets/svg/logo.svg' | relative_url }}" width="84" height="50" class="d-inline-block align-top" alt="">
+      </a>
+
+      <!-- Botão Mobile - Exibir Menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Exibir Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navegacao">
+        <!-- Links de Navegação -->
+        <ul class="navbar-nav justify-content-between mr-auto">
+          {% assign menu_principal = site.data.menus.principal | sort: 'order' %}
+          {% for item in menu_principal %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.url }}" title="Ir para {{ item.title }}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-10">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+
+    </nav>
+
+    <!-- Apresentação -->
+    <header id="apresentacao">
+
+    </header>
+
+     <!-- Conteudo do Site -->
+     <main>
+      <div class="container-fluid">
+        <div class="row">
+           <!-- Coluna da Esquerda -->
+           <div class="col-2">
+             menu
+           </div>
+
+           <!-- Coluna Central -->
+           <div class="col-8">
+             {{ content }}
+           </div>
+
+           <!-- Coluna da Direita -->
+           <div class="col-2">
+             menu
+           </div>
+        </div>
+      </div>
+     </main>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript">
+    </script>
+
+    <!-- Analytics -->
+    {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', '{{ site.google_analytics_key }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  {% endif %}
+
+
+
+  </body>
+</html>

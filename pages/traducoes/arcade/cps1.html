@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /traducoes/arcade/cps-1/
+title: "CPS-1"
+---
+
+<ul id="traducoes">
+  {% assign traducoes = site.traducoes | where:"system","cps-1" %}
+  {% for traducao in traducoes %}
+    <li id="{{ traducao.slug }}">
+      <a href="{{ traducao.url }}" alt="{{ traducao.title }}">
+        {{ traducao.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
