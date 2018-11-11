@@ -8,7 +8,7 @@ title: "CPS-1"
   {% assign traducoes = site.traducoes | where:"system","cps-1" %}
   {% for traducao in traducoes %}
     <li id="{{ traducao.slug }}">
-      <a href="{{ traducao.url }}" alt="{{ traducao.title }}">
+      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
         {{ traducao.title }}
       </a>
     </li>
