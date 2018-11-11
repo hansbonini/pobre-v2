@@ -9,7 +9,7 @@ title: "32X"
   {% for traducao in traducoes %}
     <li id="{{ traducao.url | slugify }}" class="list-group-item">
       <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
-        {{ traducao.title }}
+        {{ traducao.patch_name }}
       </a>
     </li>
   {% endfor %}
