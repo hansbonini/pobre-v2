@@ -3,14 +3,17 @@ layout: page
 ---
 <div class="container">
   <div class="row">
+    <!-- Titulo da Tradução -->
     <div class="col-12">
       <h4>{{ page.patch_name }}</h4>
     </div>
   </div>
   <div class="row">
+    <!-- Imagem em destaque da Tradução -->
     <div class="col-4">
       <img src="{{ page.featured }}" alt="page.patch_name" class="img-fluid" />
     </div>
+    <!-- Detalhes da Tradução -->
     <div class="col-8">
       <table class="table">
         <tbody>
@@ -48,6 +51,12 @@ layout: page
           </tr>
         </tbody>
       </table>
+    </div>
+    <!-- Descrição da Tradução -->
+    <div class="row">
+      <div class="col-12">
+        {{ content }}
+      </div>
     </div>
   </div>
 </div>
