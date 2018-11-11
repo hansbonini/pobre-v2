@@ -9,7 +9,7 @@ title: "Arcade"
 {% for platform in platforms %}
   {% assign level = platform.dir | split: "/" | size %}
   {% if level == 4 %}
-  <li><a href="{{ platform.title | slugify | prepend: platform.dir | prepend: site.baseurl }}">{{ platform.title }}</a></li>
+  <li><a href="{{ platform.url | prepend: site.baseurl }}">{{ platform.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
