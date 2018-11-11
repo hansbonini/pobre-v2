@@ -1,7 +1,7 @@
 ---
 principal:
 - url: /
-  title: Principal
+  title: Início
   order: 1
 - url: /
   title: Fórum

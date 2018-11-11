@@ -2,9 +2,9 @@
 patch_name: "Street Fighter II' - Champion Edition (NeoGeo BR Team)"
 title: "Street Fighter II' - Champion Edition"
 featured: "http://www.romhackers.org/imagens/traducoes/[CPS1] Street Fighter II - Champion Edition - NGBRT - Logo.png"
-platform: arcade
-system: cps-1
-type: "luta"
+platform: "Arcade"
+system: "CPS-1"
+type: "Luta"
 players: 2
 developer: "Capcom"
 publisher: "Capcom"

@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: page
 permalink: /traducoes/arcade/cps-1/
 title: "CPS-1"
 ---
 
-<ul id="traducoes">
-  {% assign traducoes = site.traducoes | where:"system","cps-1" %}
+<ul id="{{ page.url | slugify }}" class="list-group">
+  {% assign traducoes = site.traducoes | where:"system","CPS-1" %}
   {% for traducao in traducoes %}
-    <li id="{{ traducao.slug }}">
+    <li id="{{ traducao.url | slugify }}" class="list-group-item">
       <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
         {{ traducao.title }}
       </a>

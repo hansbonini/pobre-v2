@@ -65,10 +65,10 @@ layout: compress
       <!-- Menu -->
       <div class="collapse navbar-collapse" id="navegacao">
         <!-- Links de Navegação -->
-        <ul class="navbar-nav justify-content-between mr-auto">
+        <ul id ="menu-principal" class="navbar-nav justify-content-between mr-auto">
           {% assign menu_principal = site.data.menus.principal | sort: 'order' %}
           {% for item in menu_principal %}
-          <li class="nav-item">
+          <li id="menu-principal-{{ item.title | slugify }}" class="nav-item">
             <a class="nav-link" href="{{ item.url }}" title="Ir para {{ item.title }}">{{ item.title }}</a>
           </li>
           {% endfor %}

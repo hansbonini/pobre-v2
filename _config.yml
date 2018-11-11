@@ -3,8 +3,10 @@ title: PO.B.R.E
 email: your-email@example.com
 description: >- # Colocar a descrição nas linhas abaixo
   Portal Brasileiro de Romhacking e Emulação
-baseurl: "https://hansbonini.com.br/pobre-v2"
-url: "https://hansbonini.com.br/pobre-v2"
+#baseurl: "https://hansbonini.com.br/pobre-v2"
+#url: "https://hansbonini.com.br/pobre-v2"
+baseurl: ""
+url: ""
 
 # Coleções
 collections_dir: collections
@@ -12,6 +14,13 @@ collections:
   traducoes:
     permalink: "/:collection/:path/"
     output: true
+
+# Escopo
+defaults:
+  - scope:
+      type: "traducoes"
+    values:
+      layout: "traducoes"
 
 # Configurações de Build
 markdown: kramdown

@@ -1,11 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h2>Páginas</h2>
-      {% for pages in site.pages %}
-      <ul>
-        <li>{{ page.title }}</li>
-      </ul>
+      <h2>Menu de Navegação</h2>
+      <ul id="menu-navegacao" class="nav flex-column">
+      {% for page in site.pages %}
+        {% if page.menu == true %}
+        <li id="menu-navegacao-{{ page.title | slugify }}" class="nav-item">
+          <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
