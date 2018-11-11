@@ -3,12 +3,12 @@ layout: default
 permalink: /traducoes/
 ---
 
-<ul id="traducoes" class="list">
+<ul id="traducoes">
 {% assign platforms = site.pages | where_exp: "item" , "item.path contains page.dir" | uniq %}
 {% for platform in platforms %}
   {% assign level = platform.dir | split: "/" | size %}
   {% if level == 2 %}
-  <li><a class="list-item platform" href="{{ platform.dir | prepend: site.baseurl | append: platform.title | slugify }}">{{ platform.title }}</a></li>
+  <li><a href="{{ platform.dir | append: platform.title | slugify | prepend: site.baseurl }}">{{ platform.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
