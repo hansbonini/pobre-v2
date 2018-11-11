@@ -8,7 +8,7 @@ permalink: /traducoes/
 {% for platform in platforms %}
   {% assign level = platform.dir | split: "/" | size %}
   {% if level == 2 %}
-  <li><a href="{{ platform.dir | append: platform.title | slugify | prepend: site.baseurl }}">{{ platform.title }}</a></li>
+  <li><a href="{{ platform.title | slugify | prepend: platform.dir | prepend: site.baseurl }}">{{ platform.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
