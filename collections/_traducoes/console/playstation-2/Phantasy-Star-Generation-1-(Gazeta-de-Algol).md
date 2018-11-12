@@ -8,7 +8,7 @@ players: 1
 developer: "Japan Art Media (JAM)"
 publisher: "Sega"
 release_date: "28/08/2003"
-author: ["- Tradutores: Jorge Chernicharo, Orakio Rob e Filipe Engleth- Romhacking: RodolfoRG, Ignitz, CUE e Frédéric \"Tryphod\"- Edição de Imagens: Cris Redfield Fraga e Demi Goldheart"]
+author: ["- Tradutores: Jorge Chernicharo, Orakio Rob e Filipe Engleth- Romhacking: RodolfoRG, Ignitz, CUE e Frédéric \"Tryphod\"- Edição de Imagens: Cris Redfield Fraga e Demi Goldheart"]
 group_name: "Gazeta de Algol"
 group_site: ""
 patch_version: "0.9"

@@ -3,12 +3,12 @@ id: "1051"
 patch_name: "Saint Seiya - Sanctuary Juu Ni Kyuu Hen (CZSeiya)"
 title: "Saint Seiya - Sanctuary Juu Ni Kyuu Hen"
 featured: "http://www.romhackers.org/imagens/traducoes/[PS2] Saint Seiya - Sanctuary Juu Ni Kyuu Hen - CZSeiya - 1.jpg"
-type: ["Luta"]
+type: [ "Luta" ]
 players: 2
 developer: "Dimps Corporation"
 publisher: "Bandai"
 release_date: "07/04/2005"
-author: ["[CZ]Seiya, Tileko, BarugoNoShaka, rtakai, Gabriel Marques, Davi  NextConqueror, Hugo Zanin, vince_vng e Ricardo de Libra"]
+author: [ "CZSeiya, Tileko, BarugoNoShaka, rtakai, Gabriel Marques, Davi - NextConqueror, Hugo Zanin, vince_vng e Ricardo de Libra" ]
 group_name: "CZSeiya"
 group_site: "http://czseiya.wordpress.com/ (fora do ar)"
 patch_version: ""

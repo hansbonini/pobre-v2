@@ -2,6 +2,7 @@
 layout: post
 title: "Atualização das Traduções de Xenosaga 1 e Final Fantasy Tactics"
 date: 2018-08-26 22:10:00 -0200
+author: "Quinalha"
 categories: atualizacao tradução
 ---
 
