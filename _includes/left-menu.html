@@ -2,12 +2,11 @@
   <div class="row">
     <div class="col-12">
       <ul id="menu-navegacao" class="nav flex-column">
-      {% for page in site.pages %}
-        {% if page.menu == true %}
-        <li id="menu-navegacao-{{ page.title | slugify }}" class="nav-item">
-          <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% assign menus = site.pages | where_exp: "item" , "item.menu == true" | sort: "menu_order" | uniq  %}
+      {% for item in menus %}
+        <li id="menu-navegacao-{{ item.title | slugify }}" class="nav-item">
+          <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
         </li>
-        {% endif %}
       {% endfor %}
     </div>
   </div>
