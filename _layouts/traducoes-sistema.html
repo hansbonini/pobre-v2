@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<ul id="{{ page.url | slugify }}" class="list-group">
+  {% assign traducoes = site.traducoes | where:"system", page.title %}
+  {% for traducao in traducoes %}
+    <li id="{{ traducao.url | slugify }}" class="list-group-item">
+      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
+        {{ traducao.patch_name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,16 +1,5 @@
 ---
-layout: page
+layout: traducoes-sistema
 permalink: /traducoes/computador/pc/
 title: "PC"
 ---
-
-<ul id="{{ page.url | slugify }}" class="list-group">
-  {% assign traducoes = site.traducoes | where:"system","PC" %}
-  {% for traducao in traducoes %}
-    <li id="{{ traducao.url | slugify }}" class="list-group-item">
-      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
-        {{ traducao.patch_name }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>

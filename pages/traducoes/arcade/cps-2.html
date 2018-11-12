@@ -1,16 +1,5 @@
 ---
-layout: page
+layout: traducoes-sistema
 permalink: /traducoes/arcade/cps-2/
 title: "CPS-2"
 ---
-
-<ul id="{{ page.url | slugify }}" class="list-group">
-  {% assign traducoes = site.traducoes | where:"system","CPS-2" %}
-  {% for traducao in traducoes %}
-    <li id="{{ traducao.url | slugify }}" class="list-group-item">
-      <a href="{{ traducao.url | prepend: site.baseurl }}" alt="{{ traducao.title }}">
-        {{ traducao.patch_name }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
