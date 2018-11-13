@@ -1,18 +1,16 @@
 ---
 layout: page
 ---
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <img src="{{ page.featured | prepend: site.baseurl }}" alt="page.title" class="img-fluid"/>
-      </div>
-      <div class="col-9">
-        <p class="lead">{{ content }}</p>
-      </div>
-    </div>
+{% if content.size > 5 %}
+<div class="card mb-10">
+  {% if page.featured %}
+  <img class="card-img-top"  src="{{ page.featured | prepend: site.baseurl }}" alt="Imagem em destaque de {{ page.title }}" />
+  {% endif %}
+  <div class="card-body">
+    <p class="card-text">{{ content }}</p>
   </div>
 </div>
+{% endif %}
 
 <ul id="{{ page.url | slugify }}" class="list-group">
   {% assign traducoes = site.traducoes | where:"system", page.title %}
