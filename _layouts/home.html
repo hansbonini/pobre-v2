@@ -118,9 +118,70 @@ layout: compress
 
     </div>
 
+    <!-- Apresentação -->
+    <header id="apresentacao">
+      <div class="container-fluid">
+        <div class="row mt-2">
+
+          <div class="col-6">
+            {% assign destaques = site.noticias | sort: 'date' | where_exp: "item" , "item.featured == true" %}
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="{{ destaques[0].thumbnail }}" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">{{ destaques[0].title }}</h5>
+                <p class="card-text">{{ destaques[0].excerpt | strip_html }}</p>
+                <p class="card-text">{{ destaques[0].date | date: "%d/%m/%Y às %H:%M:%S"}}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+
+            <div class="d-flex align-content-between flex-wrap h-100">
+              <div class="row h-100" style="max-height: 48%">
+                <div class="col-12">
+                  <div class="card h-100 bg-dark text-white" style="background-image: url('{{ destaques[0].thumbnail }}'); background-size: cover; background-position: center center;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ destaques[1].title }}</h5>
+                      <p class="card-text">{{ destaques[1].excerpt | strip_html }}</p>
+                      <p class="card-text">{{ destaques[1].date | date: "%d/%m/%Y às %H:%M:%S"}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row h-100 mt-auto" style="max-height: 48%">
+                <div class="col-12">
+                  <div class="card h-100 bg-dark text-white" style="background-image: url('{{ destaques[0].thumbnail }}; background-size: cover; background-position: center center;')">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ destaques[1].title }}</h5>
+                      <p class="card-text">{{ destaques[1].excerpt | strip_html }}</p>
+                      <p class="card-text">{{ destaques[1].date | date: "%d/%m/%Y às %H:%M:%S"}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
      <!-- Conteudo do Site -->
      <main>
-       {{ content }}
+
+       <div class="container-fluid">
+         <div class="row mt-5">
+            <div class="col-8">
+              {{ content }}
+            </div>
+            <div class="col-4">
+            </div>
+         </div>
+       </div>
+
      </main>
 
     <!-- JS -->

@@ -1,9 +1,11 @@
 ---
-layout: post
+layout: noticias
 title: "Phoenix Wright - Ace Attorney totalmente em português"
 date: 2018-07-29 03:38:33 -0200
 author: "Mr.Fox"
 categories: tradução
+featured: true
+thumbnail: "http://www.romhackers.org/imagens/traducoes/[NDS]%20Phoenix%20Wright%20-%20Ace%20Attorney%20-%20Jacutem%20Sab%C3%A3o%20-%201.jpg"
 ---
 
 ![](http://www.romhackers.org/imagens/traducoes/[NDS]%20Phoenix%20Wright%20-%20Ace%20Attorney%20-%20Jacutem%20Sab%C3%A3o%20-%201.jpg)
